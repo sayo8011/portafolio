@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayo — Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- WELCOME SCREEN -->
+    <div class="welcome-screen" id="welcome-screen">
+        <div class="welcome-inner">
+            <div class="welcome-lines" id="welcome-lines">
+                <span class="wl" style="--d:0s">ladies and gentlemen</span>
+                <span class="wl wl-name" style="--d:0.5s">Welcome</span>
+                <span class="wl wl-sub" style="--d:1s">Portafolio — 2026</span>
+            </div>
+            <div class="welcome-bar-wrap">
+                <div class="welcome-bar" id="welcome-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav>
+            <div class="logo">Said_Andres_Marin_Bustamante</div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Menu">☰</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">sobre_mí</a></li>
+                <li><a href="#projects">proyectos</a></li>
+                <li><a href="#skills">habilidades</a></li>
+                <li><a href="#certs">certificados</a></li>
+                <li><a href="#education">educación</a></li>
+                <li><a href="#contact">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ABOUT (primera sección visible) -->
+    <section id="about" style="padding-top: 120px;">
+        <div class="about-grid reveal">
+            <div class="about-visual">
+                <!-- FOTO: reemplaza "tu-foto.jpg" con el nombre de tu imagen -->
+                <div class="profile-wrap-big">
+                    <div class="profile-ring-big"></div>
+                    <img src="Foto_perfil/Gemini_Generated_Image_oqbhfuoqbhfuoqbh.png" alt="Foto de Sayllor"
+                        class="profile-photo"
+                        onerror="this.style.display='none'; document.getElementById('profile-fallback').style.display='flex';">
+                    <div class="profile-photo profile-fallback" id="profile-fallback">S</div>
+                </div>
+                <div class="about-terminal" style="margin-top: 2rem;">
+                    <div class="terminal-bar">
+                        <div class="dot dot-r"></div>
+                        <div class="dot dot-y"></div>
+                        <div class="dot dot-g"></div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="t-line"><span class="t-prompt">~$</span><span class="t-cmd">whoami</span></div>
+                        <div class="t-line t-out"><span class="t-key">name</span>: <span class="t-val">"Said Andres
+                                Marin Bustamante"</span></div>
+                        <div class="t-line t-out"><span class="t-key">role</span>: <span class="t-val">"Ing.
+                                Sistemas"</span></div>
+                        <div class="t-line t-out"><span class="t-key">focus</span>: <span class="t-val">["CyberSec",
+                                "Web", "AD"]</span></div>
+                        <div class="t-line" style="margin-top:10px"><span class="t-prompt">~$</span><span
+                                class="t-cursor"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-text">
+                <p class="hero-eyebrow-inline"><span></span>Ingeniero de Sistemas</p>
+                <h1 class="hero-name-big">Said Andres Marin Bustamante</h1>
+                <div class="section-label">01 — sobre mí</div>
+                <p>
+                    Estudiante de Ingeniería de Sistemas con enfoque en entornos reales.
+                    Me especializo en ciberseguridad, Active Directory y desarrollo web.
+                </p>
+                <p>
+                    Trabajo constantemente en laboratorios propios para fortalecer mis
+                    habilidades técnicas, simulando escenarios reales de ataque y defensa.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="projects-header reveal">
+            <div class="section-label">02 — proyectos</div>
+            <h2 class="section-title">Lo que he <span>construido</span></h2>
+        </div>
+        <div class="projects-grid">
+
+            <!--Carta de configuracion de Gobierno de Ti-->
+            <div class="project-card reveal">
+                <div class="project-img-placeholder">
+                    <img src="Proyectos/Gobierno_Ti/Active_Directory.png" alt="" class="card-img">
+                </div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="tag">Active Directory</span>
+                        <span class="tag cyan">Windows Server 2025</span>
+                        <span class="tag">GPO</span>
+                        <span class="tag cyan">Hyper-V</span>
+                    </div>
+                    <h3>Active Directory Lab — Configuración y administración</h3>
+                    <p>Implementación completa de un dominio Windows Server 2025 con usuarios,
+                        grupos, GPOs y políticas de seguridad en entorno virtualizado con Hyper-V.</p>
+                    <div class="project-footer">
+                        <button class="btn btn-primary btn-sm open-modal" data-project="1">Ver detalles →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Carta de Ataque y defensa de active directory-->
+            <div class="project-card reveal" style="transition-delay:0.1s">
+                <div class="project-img-placeholder">
+                    <img src="Proyectos/Gobierno_Ti/Octoscan.png" alt="" class="card-img">
+                </div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="tag">Kali Linux</span>
+                        <span class="tag cyan">Pentesting</span>
+                        <span class="tag">Bash</span>
+                        <span class="tag cyan">PowerShell</span>
+                    </div>
+                    <h3>Ataque y defensa sobre Active Directory</h3>
+                    <p>Laboratorio completo de ataque y defensa sobre Windows Server 2025
+                        usando Kali Linux como atacante y herramientas propias desarrolladas
+                        en Bash y PowerShell.</p>
+                    <div class="project-footer">
+                        <button class="btn btn-primary btn-sm open-modal" data-project="2">Ver detalles →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Pagina Play station -->
+            <div class="project-card reveal" style="transition-delay:0.2s">
+                <div class="project-img-placeholder">
+                    <img src="Proyectos/Play_station/play.png" alt="" class="card-img">
+                </div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag cyan">UI Design</span>
+                        <span class="tag">Multimedia</span>
+                    </div>
+                    <h3>Web PlayStation</h3>
+                    <p>Sitio web informativo de PlayStation que muestra
+                        consolas y juegos con contenido multimedia, incluyendo trailers y diseño interactivo.</p>
+                    <div class="project-footer">
+                        <button class="btn btn-primary btn-sm open-modal" data-project="3">Ver detalles →</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="skills-header reveal">
+            <div class="section-label">03 — habilidades</div>
+            <h2 class="section-title">Mi <span>stack</span> técnico</h2>
+        </div>
+        <div class="skills-categories reveal">
+            <div class="skill-cat">
+                <div class="skill-cat-title">// Seguridad</div>
+                <div class="skill-list">
+                    <span class="skill-chip">Active Directory</span>
+                    <span class="skill-chip">Kali Linux</span>
+                    <span class="skill-chip">GPO</span>
+                    <span class="skill-chip">Pentesting</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <div class="skill-cat-title">// Desarrollo Web</div>
+                <div class="skill-list">
+                    <span class="skill-chip">HTML</span>
+                    <span class="skill-chip">CSS</span>
+                    <span class="skill-chip">JavaScript</span>
+                    <span class="skill-chip">Python</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <div class="skill-cat-title">// Herramientas</div>
+                <div class="skill-list">
+                    <span class="skill-chip">Git</span>
+                    <span class="skill-chip">Flutter</span>
+                    <span class="skill-chip">Linux</span>
+                    <span class="skill-chip">VMware</span>
+                    <span class="skill-chip">HyperV</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICADOS -->
+    <section id="certs">
+        <div class="certs-header reveal">
+            <div class="section-label">04 — certificados</div>
+            <h2 class="section-title">Mis <span>credenciales</span></h2>
+        </div>
+        <div class="certs-grid reveal">
+
+            <!-- reemplaza cada <a href="..." class="cert-card"> por esto: -->
+            <div class="cert-card" data-cert="1" onclick="openCertModal(1)">
+                <div class="cert-icon">🏅</div>
+                <div class="cert-body">
+                    <div class="cert-name">Introduction to Cybersecurity</div>
+                    <div class="cert-issuer">Cisco Networking Academy</div>
+                    <div class="cert-date">2026</div>
+                </div>
+                <span class="cert-badge">Ver →</span>
+            </div>
+
+            <!-- reemplaza cada <a href="..." class="cert-card"> por esto: -->
+            <div class="cert-card" data-cert="2" onclick="openCertModal(2)">
+                <div class="cert-icon">🏅</div>
+                <div class="cert-body">
+                    <div class="cert-name">Security of Terminals</div>
+                    <div class="cert-issuer">Cisco Networking Academy</div>
+                    <div class="cert-date">2026</div>
+                </div>
+                <span class="cert-badge">Ver →</span>
+            </div>
+
+            <!-- reemplaza cada <a href="..." class="cert-card"> por esto: -->
+            <div class="cert-card" data-cert="3" onclick="openCertModal(3)">
+                <div class="cert-icon">🏅</div>
+                <div class="cert-body">
+                    <div class="cert-name">Data analytics</div>
+                    <div class="cert-issuer">Univeridad Coopertiva De Colombia</div>
+                    <div class="cert-date">2026</div>
+                </div>
+                <span class="cert-badge">Ver →</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EDUCACIÓN -->
+    <section id="education">
+        <div class="education-header reveal">
+            <div class="section-label">06 — educación</div>
+            <h2 class="section-title">Mi <span>formación</span></h2>
+        </div>
+        <div class="education-timeline reveal">
+
+            <div class="edu-item" onclick="openEduModal(2)">
+                <div class="edu-period">2022 — Actualidad</div>
+                <div class="edu-title">Ingeniería de Sistemas</div>
+                <div class="edu-institution">Universidad Cooperativa de Colombia — Montería</div>
+                <div class="edu-desc">Carrera universitaria en curso con enfoque en ciberseguridad, redes y desarrollo
+                    de software. Trabajo constantemente en laboratorios propios simulando escenarios reales de ataque y
+                    defensa sobre infraestructura Windows.</div>
+                <span class="edu-open">Ver detalles →</span>
+            </div>
+
+            <div class="edu-item" onclick="openEduModal(1)">
+                <div class="edu-period">2010 — 2021</div>
+                <div class="edu-title">Bachillerato Académico</div>
+                <div class="edu-institution">Normal Superior de Montería</div>
+                <div class="edu-desc">Formación académica completa en una de las instituciones más reconocidas de
+                    Córdoba, con énfasis en ciencias y pensamiento crítico.</div>
+                <span class="edu-open">Ver detalles →</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="contact-inner reveal">
+            <div class="section-label">06 — contacto</div>
+            <h2 class="section-title">Hablemos</h2>
+            <p class="contact-desc">
+                ¿Tienes un proyecto o quieres colaborar? Puedes contactarme por cualquiera de estos canales.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:saidandres8011@gmail.com" class="contact-row">
+                    <div class="contact-icon">✉</div>
+                    <div class="contact-text">
+                        <div class="contact-text-label">Email</div>
+                        <div class="contact-text-val">saidandres8011@gmail.com</div>
+                    </div>
+                </a>
+                <a href="https://github.com/sayo8011" target="_blank" class="contact-row">
+                    <div class="contact-icon">⌥</div>
+                    <div class="contact-text">
+                        <div class="contact-text-label">GitHub</div>
+                        <div class="contact-text-val">github.com/sayo8011</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 <span>Sid Andres Marin Bustamante</span> — Construido con dedicación</p>
+    </footer>
+
+    <!-- MODAL RICO -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal-box">
+
+            <button class="modal-close" id="modal-close">✕</button>
+
+            <!-- HEADER -->
+            <div class="modal-header">
+                <div class="modal-tag" id="modal-tag"></div>
+                <h3 id="modal-title"></h3>
+                <p class="modal-desc" id="modal-description"></p>
+            </div>
+
+            <!-- TABS -->
+            <div class="modal-tabs">
+                <button class="mtab active" data-tab="info">Info</button>
+                <button class="mtab" data-tab="media">Fotos / Video</button>
+                <button class="mtab" data-tab="files">Archivos</button>
+            </div>
+
+            <!-- TAB: INFO -->
+            <div class="mtab-content active" id="tab-info">
+                <div id="modal-details"></div>
+                <div class="modal-link-wrap" id="modal-link-wrap" style="display:none;">
+                    <a id="modal-link" href="#" target="_blank" class="btn btn-primary">Ver proyecto →</a>
+                </div>
+            </div>
+
+            <!-- TAB: FOTOS / VIDEO -->
+            <div class="mtab-content" id="tab-media">
+                <div class="modal-gallery" id="modal-gallery"></div>
+                <div class="modal-video-wrap" id="modal-video-wrap"></div>
+            </div>
+
+            <!-- TAB: ARCHIVOS -->
+            <div class="mtab-content" id="tab-files">
+                <div class="modal-files" id="modal-files"></div>
+                <div class="file-viewer" id="file-viewer">
+                    <div class="fv-bar">
+                        <span id="fv-name"></span>
+                        <button class="fv-close" id="fv-close">✕ Cerrar</button>
+                    </div>
+                    <iframe id="fv-frame" src="" sandbox="allow-same-origin allow-scripts"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <button class="lb-close" id="lb-close">✕</button>
+        <img id="lb-img" src="" alt="">
+    </div>
+
+    <!-- MODAL CERTIFICADO -->
+    <div class="modal-overlay" id="cert-modal">
+        <div class="modal-box">
+            <button class="modal-close" id="cert-modal-close">✕</button>
+            <div class="modal-header">
+                <div class="modal-tag" id="cert-modal-tag"></div>
+                <h3 id="cert-modal-title"></h3>
+                <p class="modal-desc" id="cert-modal-description"></p>
+            </div>
+            <div class="modal-tabs">
+                <button class="ctab active" data-ctab="info">Info</button>
+                <button class="ctab" data-ctab="archivo">Certificado</button>
+            </div>
+            <div class="ctab-content active" id="ctab-info">
+                <div id="cert-modal-details"></div>
+            </div>
+            <div class="ctab-content" id="ctab-archivo">
+                <div class="file-viewer open" id="cert-file-viewer">
+                    <div class="fv-bar">
+                        <span id="cert-fv-name"></span>
+                    </div>
+                    <iframe id="cert-fv-frame" src="" sandbox="allow-same-origin allow-scripts"></iframe>
+                </div>
+                <p class="modal-no-media" id="cert-no-file" style="display:none;">Sin archivo — agrega src en certs[]
+                    del script.js</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL EDUCACIÓN -->
+    <div class="edu-modal-overlay" id="edu-modal">
+        <div class="modal-box">
+            <button class="modal-close" id="edu-modal-close">✕</button>
+            <div class="modal-header">
+                <div class="modal-tag" id="edu-modal-tag"></div>
+                <h3 id="edu-modal-title"></h3>
+                <p class="modal-desc" id="edu-modal-description"></p>
+            </div>
+            <div class="modal-tabs">
+                <button class="etab active" data-etab="info">Info</button>
+                <button class="etab" data-etab="archivo">Documento</button>
+            </div>
+            <div class="etab-content active" id="etab-info">
+                <div id="edu-modal-details"></div>
+            </div>
+            <div class="etab-content" id="etab-archivo">
+                <div id="edu-file-area" style="text-align:center;padding:2rem 0;"></div>
+                <p class="modal-no-media" id="edu-no-file" style="display:none;">Sin documento aún</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
