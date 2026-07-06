@@ -27,7 +27,7 @@ const certs = {
       { heading: 'Emitido por', text: 'Cisco Networking Academy' },
       { heading: 'Año', text: '2026' },
     ],
-    file: 'https://drive.google.com/file/d/12QasQTJrbLT24XsEoQEO6dOc2XukSP24/view?usp=drive_link',
+    file: 'https://drive.google.com/file/d/12QasQTJrbLT24XsEoQEO6dOc2XukSP24/view?usp=sharing',
     fileName: 'Introduction_to_Cybersecurity.pdf',
   },
   2: {
@@ -38,7 +38,7 @@ const certs = {
       { heading: 'Emitido por', text: 'Cisco Networking Academy' },
       { heading: 'Año', text: '2026' },
     ],
-    file: 'https://drive.google.com/file/d/1lhEaEc0NbPoTjD9j6zSPc61MObd9Kare/view?usp=drive_link',
+    file: 'https://drive.google.com/file/d/1lhEaEc0NbPoTjD9j6zSPc61MObd9Kare/view?usp=sharing',
     fileName: 'Security_of_Terminals.pdf',
   },
   3: {
@@ -49,7 +49,7 @@ const certs = {
       { heading: 'Emitido por', text: 'Universidad Cooperativa De Colombia' },
       { heading: 'Año', text: '2026' },
     ],
-    file: 'https://drive.google.com/file/d/18ZmxN6o90vR4UBriPRI3KYL49qyqLzvs/preview',
+    file: 'https://drive.google.com/file/d/18ZmxN6o90vR4UBriPRI3KYL49qyqLzvs/view?usp=sharing',
     fileName: 'Data_Analytics.pdf',
   },
 };
@@ -66,8 +66,8 @@ const education = {
     { heading: 'Ciudad', text: 'Montería, Córdoba' },
   ],
   files: [
-    { name: 'Diploma.pdf',       src: 'https://drive.google.com/file/d/1f4cX9mkwHb-Sv1uft1Goko_RTrhmpWUI/view?usp=drive_link' },
-    { name: 'Acta de Grado.pdf', src: 'https://drive.google.com/file/d/1WMpaj451Lw1pXAii2PiMHsapzxRAS7Zz/view?usp=drive_link' },
+    { name: 'Diploma.pdf',       src: 'https://drive.google.com/file/d/1f4cX9mkwHb-Sv1uft1Goko_RTrhmpWUI/view?usp=sharing' },
+    { name: 'Acta de Grado.pdf', src: 'https://drive.google.com/file/d/1WMpaj451Lw1pXAii2PiMHsapzxRAS7Zz/view?usp=sharing' },
   ],
 },
   2: {
