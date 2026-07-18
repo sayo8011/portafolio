@@ -52,6 +52,18 @@ const certs = {
     file: 'https://drive.google.com/file/d/18ZmxN6o90vR4UBriPRI3KYL49qyqLzvs/view?usp=sharing',
     fileName: 'Data_Analytics.pdf',
   },
+
+  4: {
+    tag: 'IBM SkillsBuild',
+    title: 'Getting Started with Cybersecurity',
+    description: 'El titular de esta credencial demuestra un conocimiento básico de los elementos clave de la ciberseguridad y de las amenazas a las que se enfrenta, incluidos los conceptos de privacidad de los datos y cómo evaluar la seguridad de los datos utilizando el modelo de la tríada CIA. El titular conoce las perspectivas laborales en el ámbito de la ciberseguridad y está familiarizado con las competencias necesarias para tener éxito en diversos puestos. Comprende cómo funciona una herramienta de ciberseguridad.',
+    details: [
+      { heading: 'Emitido por', text: 'IBM SkillsBuild' },
+      { heading: 'Año', text: '2026' },
+    ],
+    file: 'https://drive.google.com/file/d/1ox4GW9rGQyKZJnsmxAacKynjw22TuFEI/view?usp=sharing',
+    fileName: 'Getting Started with Cybersecurity.pdf',
+  },
 };
 
 
